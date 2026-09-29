@@ -21,12 +21,20 @@ public class AdjustScript : MonoBehaviour
         {
             GameController.control.experience -= 10;
         }
-        if (GUI.Button(new Rect(10, 260, 100, 30), "Save"))
+        if (GUI.Button(new Rect(10, 260, 100, 30), "Shield up"))
+        {
+            GameController.control.sheild += 10;
+        }
+        if (GUI.Button(new Rect(10, 300, 100, 30), "Shield down"))
+        {
+            GameController.control.sheild -= 10;
+        }
+        if (GUI.Button(new Rect(10, 330, 100, 30), "Save"))
         {
             GameController.control.Save();
         }
 
-        if (GUI.Button(new Rect(10, 300, 100, 30), "Load"))
+        if (GUI.Button(new Rect(10, 360, 100, 30), "Load"))
         {
             GameController.control.Load();
         }
